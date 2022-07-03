@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>我的驿站</title>
+<style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: rgb(10, 158, 133);
+        }
+        
+        .login {
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        .login ul li input[type=text],
+        .login ul li input[type=password] {
+            font-size: 16px;
+        }
+        
+        .login ul li input {
+            width: 275px;
+            height: 40px;
+            margin-top: 20px;
+        }
+        
+        .login ul li input[type=button] {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
 </head>
+
 <body>
-  <form>
-    <h2>请填写您的信息：</h2>
-    姓名：<input type="text" placeholder="请输入您的姓名"><br><br>
-    密码：<input type="password" placeholder="请输入密码"><br><br>
-    确认密码：<input type="password" placeholder="请确认密码"><br><br>
-    验证码：<input type="text" placeholder="请输入验证码"><br><br>
-    <label>
-      <input type="checkbox" name="select">我已阅读并接受
-    </label><br>
-    <input type="reset">
-    <input type="submit">
-  </form>
+    <form class="login">
+        <h2>登录</h2>
+        <ul>
+            <li>
+                用户名：<input type="text">
+            </li>
+            <li>
+                密&emsp;码：<input type="password">
+            </li>
+            <li><input type="button" value="登录"></li>
+            <li>还没有账号？<a href="注册.html">点击注册</a></li>
+        </ul>
+    </form>
 </body>
 </html>
+
+
+
 
 
 <!DOCTYPE html>
